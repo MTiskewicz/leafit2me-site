@@ -7,50 +7,20 @@
   <title>Leaf It 2 Me</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #388E3C;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .cta {
-      background-color: #e8f5e9;
-      padding: 2rem;
-      border-left: 4px solid #4CAF50;
-      margin-top: 2rem;
-    }
-    footer {
-      background-color: #2E7D32;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
+    body { margin: 0; font-family: 'Open Sans', sans-serif; background: #f5f5f5; color: #333; }
+    header { background-color: #4CAF50; color: white; text-align: center; padding: 2rem 1rem; }
+    nav { background-color: #388E3C; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; max-width: 1000px; margin: auto; }
+    .services img, .gallery img { width: 150px; margin: 0.5rem; }
+    .hero img { width: 100%; max-height: 400px; object-fit: cover; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    footer { background-color: #2E7D32; color: white; text-align: center; padding: 1rem; }
   </style>
 </head>
 <body>
-  <header>
+  <header class="hero">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/hero/6530e59ec230b.png" alt="Hero image" />
     <h1>Leaf It 2 Me</h1>
     <p>Gutter Cleaning, Repairs & More in Waukesha County</p>
   </header>
@@ -58,34 +28,38 @@
   <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="services">
+  <section id="services" class="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Gutter Cleaning</li>
-      <li>Gutter Guard Installation</li>
-      <li>Gutter Repairs</li>
-      <li>Roof Sweeping</li>
-      <li>Downspout Flushing</li>
-    </ul>
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/service/652ff5b06fd3a.png" alt="Gutter Cleaning">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/service/652ff6164df11.png" alt="Gutter Guard Installation">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/service/652ff61da0973.png" alt="Gutter Repairs">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/service/652ff62a8a9b4.png" alt="Roof Sweeping">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/service/652ff63a9f293.png" alt="Downspout Flushing">
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Leaf It 2 Me is a local business serving Waukesha County with honest, affordable gutter maintenance and related services. We’re committed to keeping your home safe from water damage, with prompt and professional care.</p>
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/about_us/65314a92b62a0.png" alt="Owner">
+    <p>Leaf It 2 Me is your trusted local gutter service provider, proudly serving Waukesha County. We are certified, insured, and focused on prompt, affordable service.</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/gallery/6530e2a7bcf68.png" alt="Gutter cleaning">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/gallery/6530e2bd22132.png" alt="Gutter guard install">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/gallery/6530e2ca21f64.png" alt="Clean gutter">
+    <img src="https://d3cnqzq0ivprch.cloudfront.net/uploads/gallery/6530e2d6c4083.png" alt="Roof clearing">
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Call or text: <strong>(262) 333-4444</strong></p>
     <p>Email: <strong>hello@leafit2.me</strong></p>
-  </section>
-
-  <section class="cta">
-    <h2>Need Gutter Help?</h2>
-    <p>We offer free quotes and fast service. Let’s keep your home flowing right — contact us today!</p>
+    <img src="https://app.nicejob.com/static/images/widgets/review-thumbnail-default.png" alt="Reviews badge">
   </section>
 
   <footer>
