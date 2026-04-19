@@ -4,768 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leaf It 2 Me | Gutter Cleaning & Protection | Milwaukee, WI</title>
-  <meta name="description" content="Professional gutter cleaning and gutter guard installation in Milwaukee & Waukesha Counties. Licensed, insured, and locally owned. Get a free quote today!" />
+  <meta name="description" content="Professional gutter cleaning and gutter guard installation in Milwaukee & Waukesha Counties. Licensed, insured, locally owned. Free quotes. Call (414) 485-4860." />
+  <link rel="canonical" href="https://www.leafit2me.me/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --green-dark:  #1a4d2e;
-      --green-mid:   #2d7a4f;
-      --green-light: #4caf74;
-      --green-pale:  #e8f5ee;
-      --accent:      #f4b942;
-      --text:        #1c2b22;
-      --text-light:  #4a5e52;
-      --white:       #ffffff;
-      --gray:        #f7f9f8;
-      --border:      #d4e6da;
-      --radius:      12px;
-      --shadow:      0 4px 24px rgba(26,77,46,.12);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      line-height: 1.6;
-      background: var(--white);
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: var(--green-dark);
-      box-shadow: 0 2px 16px rgba(0,0,0,.2);
-    }
-
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 68px;
-    }
-
-    .nav-logo img {
-      height: 44px;
-      border-radius: 6px;
-      display: block;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: rgba(255,255,255,.85);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: .95rem;
-      transition: color .2s;
-    }
-
-    .nav-links a:hover { color: var(--white); }
-
-    .nav-links .btn-nav {
-      background: var(--accent);
-      color: var(--green-dark);
-      padding: .5rem 1.2rem;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: background .2s, transform .1s;
-    }
-
-    .nav-links .btn-nav:hover { background: #e0a730; transform: translateY(-1px); }
-
-    .nav-phone-link {
-      color: rgba(255,255,255,.85) !important;
-    }
-
-    /* hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 4px;
-    }
-
-    .hamburger span {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background: var(--white);
-      border-radius: 2px;
-      transition: all .3s;
-    }
-
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-    .mobile-menu {
-      display: none;
-      flex-direction: column;
-      background: var(--green-dark);
-      padding: 1rem 1.5rem 1.5rem;
-      gap: .5rem;
-    }
-
-    .mobile-menu.open { display: flex; }
-
-    .mobile-menu a {
-      color: rgba(255,255,255,.9);
-      text-decoration: none;
-      font-weight: 500;
-      padding: .65rem 0;
-      border-bottom: 1px solid rgba(255,255,255,.1);
-      font-size: 1rem;
-    }
-
-    .mobile-menu a:last-child { border-bottom: none; }
-
-    .mobile-menu .btn-mobile-quote {
-      margin-top: .5rem;
-      background: var(--accent);
-      color: var(--green-dark) !important;
-      text-align: center;
-      padding: .75rem !important;
-      border-radius: 8px;
-      font-weight: 700 !important;
-      border: none !important;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
-      color: var(--white);
-      padding: 5rem 1.5rem 4rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url('images/gutters.webp') center/cover no-repeat;
-      opacity: .12;
-    }
-
-    .hero-inner { position: relative; max-width: 700px; margin: 0 auto; }
-
-    .hero img.logo {
-      height: 100px;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,.3);
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.15;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.15rem;
-      color: rgba(255,255,255,.88);
-      margin-bottom: 2rem;
-      max-width: 540px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero-badges {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;
-    }
-
-    .badge {
-      background: rgba(255,255,255,.15);
-      border: 1px solid rgba(255,255,255,.25);
-      border-radius: 50px;
-      padding: .4rem 1rem;
-      font-size: .85rem;
-      font-weight: 600;
-      letter-spacing: .02em;
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: var(--green-dark);
-      font-weight: 700;
-      font-size: 1.05rem;
-      padding: .85rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: background .2s, transform .15s, box-shadow .2s;
-      box-shadow: 0 4px 14px rgba(244,185,66,.4);
-      display: inline-block;
-    }
-
-    .btn-primary:hover { background: #e0a730; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,185,66,.5); }
-
-    .btn-secondary {
-      background: transparent;
-      color: var(--white);
-      font-weight: 600;
-      font-size: 1.05rem;
-      padding: .85rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      border: 2px solid rgba(255,255,255,.5);
-      transition: border-color .2s, background .2s;
-      display: inline-block;
-    }
-
-    .btn-secondary:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
-
-    /* ── TRUST BAR ── */
-    .trust-bar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: 1.2rem 1.5rem;
-    }
-
-    .trust-bar-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-    }
-
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      font-size: .9rem;
-      font-weight: 600;
-      color: var(--green-dark);
-    }
-
-    .trust-item svg { flex-shrink: 0; }
-
-    /* ── SECTIONS ── */
-    section { padding: 5rem 1.5rem; }
-
-    .container { max-width: 1100px; margin: 0 auto; }
-
-    .section-label {
-      display: inline-block;
-      background: var(--green-pale);
-      color: var(--green-mid);
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      padding: .3rem .9rem;
-      border-radius: 50px;
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.7rem, 4vw, 2.5rem);
-      color: var(--green-dark);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .section-intro {
-      color: var(--text-light);
-      font-size: 1.05rem;
-      max-width: 560px;
-      margin-bottom: 3rem;
-    }
-
-    /* ── SERVICES ── */
-    #services { background: var(--gray); }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .service-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: transform .2s, box-shadow .2s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(26,77,46,.18); }
-
-    .service-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    .service-card-body {
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .service-card h3 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--green-dark);
-      margin-bottom: .75rem;
-    }
-
-    .service-card p {
-      color: var(--text-light);
-      font-size: .95rem;
-      margin-bottom: 1.25rem;
-      flex: 1;
-    }
-
-    .service-card ul {
-      list-style: none;
-      margin-bottom: 1.5rem;
-    }
-
-    .service-card ul li {
-      font-size: .9rem;
-      color: var(--text-light);
-      padding: .3rem 0;
-      display: flex;
-      align-items: flex-start;
-      gap: .5rem;
-    }
-
-    .service-card ul li::before {
-      content: '✓';
-      color: var(--green-light);
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    .btn-card {
-      display: block;
-      text-align: center;
-      background: var(--green-dark);
-      color: var(--white);
-      font-weight: 600;
-      padding: .75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background .2s;
-      margin-top: auto;
-    }
-
-    .btn-card:hover { background: var(--green-mid); }
-
-    /* ── HOW IT WORKS ── */
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .step {
-      text-align: center;
-    }
-
-    .step-num {
-      width: 52px;
-      height: 52px;
-      background: var(--green-pale);
-      border: 2px solid var(--green-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--green-dark);
-      margin: 0 auto 1rem;
-    }
-
-    .step h4 {
-      font-weight: 700;
-      color: var(--green-dark);
-      margin-bottom: .4rem;
-    }
-
-    .step p { font-size: .9rem; color: var(--text-light); }
-
-    /* ── ABOUT ── */
-    #about { background: var(--gray); }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .about-img {
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .about-img img { width: 100%; display: block; height: 380px; object-fit: cover; }
-
-    .about-content h2 { margin-bottom: 1rem; }
-
-    .about-content p { color: var(--text-light); margin-bottom: 1rem; }
-
-    .about-facts {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin: 1.5rem 0 2rem;
-    }
-
-    .fact {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .fact strong {
-      display: block;
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--green-dark);
-    }
-
-    .fact span { font-size: .85rem; color: var(--text-light); }
-
-    /* ── GUTTER GUARD SPOTLIGHT ── */
-    .guard-section {
-      background: var(--green-dark);
-      color: var(--white);
-    }
-
-    .guard-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .guard-img {
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,.3);
-    }
-
-    .guard-img img { width: 100%; display: block; height: 360px; object-fit: cover; }
-
-    .guard-content .section-label { background: rgba(255,255,255,.15); color: var(--white); }
-
-    .guard-content h2 { color: var(--white); }
-
-    .guard-content p { color: rgba(255,255,255,.8); margin-bottom: 1rem; }
-
-    .guard-features {
-      list-style: none;
-      margin: 1.5rem 0 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: .6rem;
-    }
-
-    .guard-features li {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-      color: rgba(255,255,255,.9);
-      font-size: .95rem;
-    }
-
-    .guard-features li::before {
-      content: '✓';
-      background: var(--green-light);
-      color: var(--white);
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .75rem;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    /* ── REVIEWS ── */
-    #reviews { background: var(--gray); }
-
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .review-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
-    }
-
-    .review-stars {
-      color: #fbbc05;
-      font-size: 1.1rem;
-      margin-bottom: .75rem;
-    }
-
-    .review-text {
-      font-size: .95rem;
-      color: var(--text-light);
-      font-style: italic;
-      margin-bottom: 1.25rem;
-      line-height: 1.7;
-    }
-
-    .reviewer {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-    }
-
-    .reviewer-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--green-pale);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: var(--green-dark);
-      font-size: .95rem;
-      flex-shrink: 0;
-    }
-
-    .reviewer-name { font-weight: 600; font-size: .9rem; color: var(--text); }
-    .reviewer-source { display: flex; align-items: center; gap: .3rem; }
-    .reviewer-source img { height: 16px; }
-    .reviewer-source span { font-size: .78rem; color: var(--text-light); }
-
-    /* ── CTA BANNER ── */
-    .cta-banner {
-      background: linear-gradient(135deg, var(--green-mid), var(--green-dark));
-      color: var(--white);
-      text-align: center;
-      padding: 5rem 1.5rem;
-    }
-
-    .cta-banner h2 { color: var(--white); margin-bottom: 1rem; }
-
-    .cta-banner p { color: rgba(255,255,255,.85); margin-bottom: 2rem; font-size: 1.1rem; }
-
-    .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-    .btn-white {
-      background: var(--white);
-      color: var(--green-dark);
-      font-weight: 700;
-      font-size: 1rem;
-      padding: .85rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: background .2s, transform .15s;
-      display: inline-block;
-    }
-
-    .btn-white:hover { background: var(--green-pale); transform: translateY(-2px); }
-
-    .btn-outline-white {
-      background: transparent;
-      color: var(--white);
-      font-weight: 600;
-      font-size: 1rem;
-      padding: .85rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      border: 2px solid rgba(255,255,255,.6);
-      transition: border-color .2s, background .2s;
-      display: inline-block;
-    }
-
-    .btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--green-dark);
-      color: rgba(255,255,255,.75);
-      padding: 3.5rem 1.5rem 2rem;
-    }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 3rem;
-    }
-
-    .footer-brand img { height: 50px; border-radius: 6px; margin-bottom: 1rem; display: block; }
-
-    .footer-brand p { font-size: .9rem; line-height: 1.7; margin-bottom: 1rem; }
-
-    .footer-brand a { color: var(--accent); text-decoration: none; font-weight: 600; }
-
-    .footer-col h4 {
-      color: var(--white);
-      font-weight: 700;
-      margin-bottom: 1rem;
-      font-size: .95rem;
-    }
-
-    .footer-col ul { list-style: none; }
-
-    .footer-col ul li { margin-bottom: .5rem; }
-
-    .footer-col ul li a {
-      color: rgba(255,255,255,.7);
-      text-decoration: none;
-      font-size: .9rem;
-      transition: color .2s;
-    }
-
-    .footer-col ul li a:hover { color: var(--white); }
-
-    .footer-bottom {
-      max-width: 1100px;
-      margin: 2.5rem auto 0;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,.12);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: .5rem;
-      font-size: .82rem;
-      color: rgba(255,255,255,.45);
-    }
-
-    .footer-bottom a { color: rgba(255,255,255,.45); text-decoration: none; }
-
-    /* ── FLOATING CALL BUTTON (mobile) ── */
-    .float-call {
-      display: none;
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      z-index: 999;
-      background: var(--green-mid);
-      color: var(--white);
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(45,122,79,.5);
-      text-decoration: none;
-      transition: background .2s, transform .15s;
-    }
-
-    .float-call:hover { background: var(--green-dark); transform: scale(1.06); }
-
-    .float-call svg { width: 26px; height: 26px; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-      .float-call { display: flex; }
-
-      .about-grid,
-      .guard-grid { grid-template-columns: 1fr; gap: 2rem; }
-
-      .guard-img { order: -1; }
-      .guard-img img { height: 240px; }
-      .about-img img { height: 240px; }
-
-      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
-
-      section { padding: 3.5rem 1.25rem; }
-
-      .about-facts { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 480px) {
-      .trust-bar-inner { gap: 1.2rem; }
-      .hero { padding: 3.5rem 1.25rem 3rem; }
-      .about-facts { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ── NAV ── -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo"><img src="images/logo.jpg" alt="Leaf It 2 Me Logo" /></a>
+    <a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Leaf It 2 Me Logo" /></a>
     <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="tel:4144854860" class="nav-phone-link">(414) 485-4860</a></li>
+      <li class="has-dropdown">
+        <a href="services/gutter-cleaning.html">Services <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="services/gutter-cleaning.html">Gutter Cleaning</a></li>
+          <li><a href="services/gutter-guards.html">Gutter Guards</a></li>
+          <li><a href="services/gutter-installation.html">Gutter Installation</a></li>
+          <li><a href="services/gutter-repairs.html">Gutter Repairs</a></li>
+        </ul>
+      </li>
+      <li><a href="service-areas.html">Service Areas</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="tel:4144854860">(414) 485-4860</a></li>
       <li><a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-nav" target="_blank" rel="noopener">Free Quote</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#services" onclick="closeMobileMenu()">Services</a>
-    <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
-    <a href="#about" onclick="closeMobileMenu()">About</a>
-    <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+    <a href="services/gutter-cleaning.html">Gutter Cleaning</a>
+    <a href="services/gutter-guards.html">Gutter Guards</a>
+    <a href="services/gutter-installation.html">Gutter Installation</a>
+    <a href="services/gutter-repairs.html">Gutter Repairs</a>
+    <a href="service-areas.html">Service Areas</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
     <a href="tel:4144854860">(414) 485-4860</a>
     <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-mobile-quote" target="_blank" rel="noopener">Get Free Quote</a>
   </div>
 </nav>
 
-<!-- ── HERO ── -->
 <header class="hero">
   <div class="hero-inner">
     <img src="images/logo.jpg" alt="Leaf It 2 Me" class="logo" />
@@ -784,7 +67,6 @@
   </div>
 </header>
 
-<!-- ── TRUST BAR ── -->
 <div class="trust-bar">
   <div class="trust-bar-inner">
     <div class="trust-item">
@@ -810,16 +92,14 @@
   </div>
 </div>
 
-<!-- ── SERVICES ── -->
-<section id="services">
+<section id="services" style="background: var(--gray);">
   <div class="container">
     <span class="section-label">What We Do</span>
     <h2>Our Services</h2>
     <p class="section-intro">From a one-time cleanout to full gutter protection, we've got Milwaukee homeowners covered.</p>
     <div class="services-grid">
-      <!-- Gutter Cleaning -->
       <div class="service-card">
-        <img src="images/gutter-clean.webp" alt="Gutter cleaning service" loading="lazy" />
+        <img src="images/gutter-clean.webp" alt="Gutter cleaning service Milwaukee" loading="lazy" />
         <div class="service-card-body">
           <h3>Gutter Cleaning</h3>
           <p>Complete debris removal by hand or vacuum, keeping your gutters flowing freely and protecting your home from water damage year-round.</p>
@@ -834,9 +114,8 @@
           <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-card" target="_blank" rel="noopener">Get a Quote</a>
         </div>
       </div>
-      <!-- Gutter Guards -->
       <div class="service-card">
-        <img src="images/gutter-guards.webp" alt="Gutter guard installation" loading="lazy" />
+        <img src="images/gutter-guards.webp" alt="Gutter guard installation Milwaukee" loading="lazy" />
         <div class="service-card-body">
           <h3>Gutter Guard Installation</h3>
           <p>Stop climbing ladders every fall. We install Leafblaster Pro gutter guards — USA-made, Gutterglove-certified, backed by a 40-year warranty.</p>
@@ -851,70 +130,66 @@
           <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-card" target="_blank" rel="noopener">Get a Quote</a>
         </div>
       </div>
+      <div class="service-card">
+        <img src="images/gutters.webp" alt="New gutter installation Milwaukee" loading="lazy" />
+        <div class="service-card-body">
+          <h3>Gutter Installation</h3>
+          <p>Need new gutters entirely? We assess your home and recommend the right system to protect your foundation, siding, and landscaping.</p>
+          <ul>
+            <li>Free on-site assessment</li>
+            <li>Properly sized for your home</li>
+            <li>Professional-grade materials</li>
+            <li>Correct slope &amp; pitch installation</li>
+          </ul>
+          <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-card" target="_blank" rel="noopener">Get a Quote</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="images/gutter-clean.webp" alt="Gutter repair Milwaukee" loading="lazy" />
+        <div class="service-card-body">
+          <h3>Gutter Repairs</h3>
+          <p>Sagging sections, leaky joints, or pulling away from fascia? We diagnose and fix gutter issues before they cause bigger problems.</p>
+          <ul>
+            <li>Leak sealing &amp; joint repair</li>
+            <li>Re-sloping for proper drainage</li>
+            <li>Fascia board assessment</li>
+            <li>Hanger &amp; spike replacement</li>
+          </ul>
+          <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-card" target="_blank" rel="noopener">Get a Quote</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── HOW IT WORKS ── -->
 <section id="how-it-works">
   <div class="container">
     <span class="section-label">Simple Process</span>
     <h2>How It Works</h2>
     <p class="section-intro">Getting clean gutters is easy. Here's what to expect from start to finish.</p>
     <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h4>Get a Free Quote</h4>
-        <p>Fill out our quick online form and we'll send you a no-obligation quote fast.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h4>Book Your Service</h4>
-        <p>Pick a day that works for you. We'll send a reminder call before we arrive.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h4>We Do the Work</h4>
-        <p>Our team cleans thoroughly, clears downspouts, and tidies up your property.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h4>Inspect the Results</h4>
-        <p>Receive before &amp; after photos and a full condition report by email — same day.</p>
-      </div>
+      <div class="step"><div class="step-num">1</div><h4>Get a Free Quote</h4><p>Fill out our quick online form and we'll send you a no-obligation quote fast.</p></div>
+      <div class="step"><div class="step-num">2</div><h4>Book Your Service</h4><p>Pick a day that works. We'll send a reminder call before we arrive.</p></div>
+      <div class="step"><div class="step-num">3</div><h4>We Do the Work</h4><p>Our team cleans thoroughly, clears downspouts, and tidies up your property.</p></div>
+      <div class="step"><div class="step-num">4</div><h4>Inspect the Results</h4><p>Receive before &amp; after photos and a full condition report by email — same day.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ── ABOUT ── -->
-<section id="about">
+<section id="about" style="background: var(--gray);">
   <div class="container">
     <div class="about-grid">
-      <div class="about-img">
-        <img src="images/gutters.webp" alt="Professional gutter service in Milwaukee" loading="lazy" />
-      </div>
+      <div class="about-img"><img src="images/gutters.webp" alt="Gutter service Milwaukee" loading="lazy" /></div>
       <div class="about-content">
         <span class="section-label">About Us</span>
         <h2>Milwaukee's Trusted Gutter Experts</h2>
-        <p>Leaf It 2 Me is a locally owned and operated gutter cleaning and protection company based in West Allis, WI. We serve homeowners across Milwaukee and Waukesha Counties — and are happy to travel to Racine County too.</p>
-        <p>We're proud to be Gutterglove-certified and carry full licensing and insurance. Every job comes with a 100% satisfaction guarantee and transparent communication from start to finish.</p>
+        <p>Leaf It 2 Me is a locally owned and operated gutter cleaning and protection company based in West Allis, WI. We serve homeowners across Milwaukee and Waukesha Counties.</p>
+        <p>We're proud to be Gutterglove-certified and carry full licensing and insurance. Every job comes with a 100% satisfaction guarantee.</p>
         <div class="about-facts">
-          <div class="fact">
-            <strong>5★</strong>
-            <span>Google Rating</span>
-          </div>
-          <div class="fact">
-            <strong>2</strong>
-            <span>County Service Areas</span>
-          </div>
-          <div class="fact">
-            <strong>40yr</strong>
-            <span>Guard Warranty</span>
-          </div>
-          <div class="fact">
-            <strong>100%</strong>
-            <span>Satisfaction Guaranteed</span>
-          </div>
+          <div class="fact"><strong>5★</strong><span>Google Rating</span></div>
+          <div class="fact"><strong>2</strong><span>County Service Areas</span></div>
+          <div class="fact"><strong>40yr</strong><span>Guard Warranty</span></div>
+          <div class="fact"><strong>100%</strong><span>Satisfaction Guaranteed</span></div>
         </div>
         <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-primary" target="_blank" rel="noopener">Request a Free Quote</a>
       </div>
@@ -922,7 +197,6 @@
   </div>
 </section>
 
-<!-- ── GUTTER GUARD SPOTLIGHT ── -->
 <section class="guard-section">
   <div class="container">
     <div class="guard-grid">
@@ -936,36 +210,26 @@
           <li>40-year product warranty</li>
           <li>Installed with Geocel 2320 professional sealant</li>
           <li>Free on-site assessment before installation</li>
-          <li>Saves time, money, and ladder trips</li>
         </ul>
         <a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" class="btn-primary" target="_blank" rel="noopener">Get a Guard Quote</a>
       </div>
-      <div class="guard-img">
-        <img src="images/the-guard.webp" alt="Leafblaster Pro gutter guard" loading="lazy" />
-      </div>
+      <div class="guard-img"><img src="images/the-guard.webp" alt="Leafblaster Pro gutter guard" loading="lazy" /></div>
     </div>
   </div>
 </section>
 
-<!-- ── REVIEWS ── -->
-<section id="reviews">
+<section id="reviews" style="background: var(--gray);">
   <div class="container">
     <span class="section-label">What Customers Say</span>
     <h2>5-Star Google Reviews</h2>
-    <p class="section-intro">Don't just take our word for it — here's what Milwaukee homeowners are saying about Leaf It 2 Me.</p>
+    <p class="section-intro">Don't just take our word for it — here's what Milwaukee homeowners are saying.</p>
     <div class="reviews-grid">
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"Marc responded quickly to my request. He did a very thorough job of cleaning my gutters at a very good price. I would highly recommend him."</p>
         <div class="reviewer">
           <div class="reviewer-avatar">TR</div>
-          <div>
-            <div class="reviewer-name">Tom Randolph</div>
-            <div class="reviewer-source">
-              <img src="images/google-badge.svg" alt="Google" />
-              <span>Google Review</span>
-            </div>
-          </div>
+          <div><div class="reviewer-name">Tom Randolph</div><div class="reviewer-source"><img src="images/google-badge.svg" alt="Google" /><span>Google Review</span></div></div>
         </div>
       </div>
       <div class="review-card">
@@ -973,25 +237,18 @@
         <p class="review-text">"Marc is very responsive and helped with a lot of leaves that clogged our gutters. We have been using Leaf It 2 Me and are pretty happy with the service."</p>
         <div class="reviewer">
           <div class="reviewer-avatar">AV</div>
-          <div>
-            <div class="reviewer-name">Arun Venkateswaran</div>
-            <div class="reviewer-source">
-              <img src="images/google-badge.svg" alt="Google" />
-              <span>Google Review</span>
-            </div>
-          </div>
+          <div><div class="reviewer-name">Arun Venkateswaran</div><div class="reviewer-source"><img src="images/google-badge.svg" alt="Google" /><span>Google Review</span></div></div>
         </div>
       </div>
       <div class="review-card" style="background: var(--green-pale); border-color: var(--green-light);">
         <div style="font-size:2rem; margin-bottom:.75rem;">💬</div>
-        <p class="review-text" style="font-style:normal; color: var(--text);">"Love what you're seeing? Leave us a review on Google and help other Milwaukee homeowners find trusted gutter service."</p>
-        <a href="https://www.google.com/search?q=Leaf+It+2+Me+gutter+cleaning+Milwaukee" class="btn-card" target="_blank" rel="noopener" style="margin-top:auto; text-align:center; display:block;">Leave a Review</a>
+        <p class="review-text" style="font-style:normal; color:var(--text);">Happy with your service? Leave us a review on Google and help other Milwaukee homeowners find trusted gutter care.</p>
+        <a href="reviews.html" class="btn-card" style="margin-top:auto;">See All Reviews</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── CTA BANNER ── -->
 <div class="cta-banner">
   <div class="container" style="max-width:660px; text-align:center;">
     <h2>Ready for Clean, Flowing Gutters?</h2>
@@ -1003,7 +260,6 @@
   </div>
 </div>
 
-<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -1014,47 +270,46 @@
     <div class="footer-col">
       <h4>Our Services</h4>
       <ul>
-        <li><a href="#services">Gutter Cleaning</a></li>
-        <li><a href="#services">Gutter Guard Installation</a></li>
-        <li><a href="https://www.thecustomerfactor.com/new/bid.php?id=TXRpc2tld2ljeg==" target="_blank" rel="noopener">Free Quote</a></li>
+        <li><a href="services/gutter-cleaning.html">Gutter Cleaning</a></li>
+        <li><a href="services/gutter-guards.html">Gutter Guards</a></li>
+        <li><a href="services/gutter-installation.html">Gutter Installation</a></li>
+        <li><a href="services/gutter-repairs.html">Gutter Repairs</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="service-areas.html">Service Areas</a></li>
         <li><a href="tel:4144854860">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Top Cities</h4>
+      <ul>
+        <li><a href="cities/milwaukee.html">Milwaukee</a></li>
+        <li><a href="cities/west-allis.html">West Allis</a></li>
+        <li><a href="cities/wauwatosa.html">Wauwatosa</a></li>
+        <li><a href="cities/brookfield.html">Brookfield</a></li>
+        <li><a href="cities/waukesha.html">Waukesha</a></li>
+        <li><a href="service-areas.html">View All →</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2025 Leaf It 2 Me Gutter Cleaning &amp; Protection. All rights reserved.</span>
-    <span>West Allis, WI 53214</span>
+    <span>West Allis, WI · <a href="tel:4144854860">(414) 485-4860</a></span>
   </div>
 </footer>
 
-<!-- ── FLOATING CALL BUTTON ── -->
-<a href="tel:4144854860" class="float-call" aria-label="Call us">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-  </svg>
+<a href="tel:4144854860" class="float-call" aria-label="Call Leaf It 2 Me">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
 </a>
 
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
-  });
-
-  function closeMobileMenu() {
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-  }
-</script>
+<script src="js/main.js"></script>
+<!-- NiceJob Engage Widget — replace YOUR_NICEJOB_ID with your company ID from the NiceJob dashboard -->
+<script src="https://cdn.nicejob.com/nicejob.min.js?id=YOUR_NICEJOB_ID" async></script>
 </body>
 </html>

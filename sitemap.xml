@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
+  <url><loc>https://www.leafit2me.me/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.leafit2me.me/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.leafit2me.me/reviews.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.leafit2me.me/faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/service-areas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Service pages -->
+  <url><loc>https://www.leafit2me.me/services/gutter-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.leafit2me.me/services/gutter-guards.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.leafit2me.me/services/gutter-installation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.leafit2me.me/services/gutter-repairs.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- City pages -->
+  <url><loc>https://www.leafit2me.me/cities/milwaukee.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/west-allis.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/wauwatosa.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/greenfield.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/brookfield.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/waukesha.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/new-berlin.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/muskego.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/franklin.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/oak-creek.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/hales-corners.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/greendale.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/menomonee-falls.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/pewaukee.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.leafit2me.me/cities/cudahy.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+</urlset>
