@@ -46,8 +46,8 @@ nav {
   height: 68px;
 }
 
-.nav-logo { background: #ffffff; padding: 6px 10px; border-radius: 6px; display: inline-flex; align-items: center; line-height: 0; }
-.nav-logo img { height: 44px; border-radius: 4px; }
+.nav-logo { display: inline-flex; align-items: center; line-height: 0; }
+.nav-logo img { height: 44px; border-radius: 4px; display: block; }
 
 .nav-links {
   display: flex;
@@ -201,12 +201,17 @@ nav {
 
 .hero img.logo {
   height: 100px;
-  border-radius: 10px;
+  border-radius: 6px;
   margin-bottom: 1.5rem;
+  display: block;
+}
+.hero .logo-wrap {
+  display: inline-block;
+  background: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin: 0 auto 1.5rem;
   box-shadow: 0 4px 20px rgba(0,0,0,.3);
-  background: #fff;
-  padding: 8px 14px;
-  box-sizing: content-box;
 }
 
 /* ── PAGE HERO (inner pages) ── */
@@ -812,7 +817,7 @@ footer {
   gap: 3rem;
 }
 
-.footer-brand img { height: 50px; border-radius: 6px; margin-bottom: 1rem; background: #fff; padding: 6px 10px; box-sizing: content-box; }
+.footer-brand img { height: 50px; border-radius: 4px; display: block; }
 .footer-brand p { font-size: .9rem; line-height: 1.7; margin-bottom: 1rem; }
 .footer-brand a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
@@ -953,8 +958,30 @@ footer {
   border-radius: 4px;
 }
 .before-after-card.after .ba-label { background: var(--accent); color: var(--green-dark); }
+
+/* ── REPAIR GALLERY (3-up) ── */
+.repair-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.repair-gallery-card { position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+.repair-gallery-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
+.repair-gallery-card .rg-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,0));
+  color: var(--white);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: 1.5rem .9rem .7rem;
+}
 @media (max-width: 768px) {
   .before-after-grid { grid-template-columns: 1fr; }
+  .repair-gallery { grid-template-columns: 1fr; }
   .dropdown.dropdown-mega { min-width: 280px; }
   .dropdown-mega .mega-grid { grid-template-columns: 1fr; gap: .75rem; }
 }
