@@ -32,8 +32,9 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--green-dark);
-  box-shadow: 0 2px 16px rgba(0,0,0,.2);
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .nav-inner {
@@ -43,11 +44,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: 84px;
 }
 
 .nav-logo { display: inline-flex; align-items: center; line-height: 0; }
-.nav-logo img { height: 44px; border-radius: 4px; display: block; }
+.nav-logo img { height: 60px; border-radius: 4px; display: block; }
 
 .nav-links {
   display: flex;
@@ -59,15 +60,15 @@ nav {
 .nav-links > li { position: relative; }
 
 .nav-links a {
-  color: rgba(255,255,255,.85);
+  color: #1a3a2a;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: .9rem;
   transition: color .2s;
   white-space: nowrap;
 }
 
-.nav-links a:hover { color: var(--white); }
+.nav-links a:hover { color: var(--green-mid); }
 
 /* dropdown */
 .nav-links .has-dropdown { padding-bottom: 14px; margin-bottom: -14px; }
@@ -138,7 +139,7 @@ nav {
   display: block;
   width: 26px;
   height: 2px;
-  background: var(--white);
+  background: #1a3a2a;
   border-radius: 2px;
   transition: all .3s;
 }
@@ -150,19 +151,20 @@ nav {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background: var(--green-dark);
+  background: #ffffff;
   padding: 1rem 1.5rem 1.5rem;
   gap: .25rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 .mobile-menu.open { display: flex; }
 
 .mobile-menu a {
-  color: rgba(255,255,255,.9);
+  color: #1a3a2a;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   padding: .6rem 0;
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid #e5e7eb;
   font-size: .95rem;
 }
 
