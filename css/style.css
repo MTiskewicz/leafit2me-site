@@ -46,7 +46,7 @@ nav {
   height: 68px;
 }
 
-.nav-logo img { height: 44px; border-radius: 6px; }
+.nav-logo img { height: 44px; border-radius: 6px; background: #fff; padding: 4px 8px; box-sizing: content-box; }
 
 .nav-links {
   display: flex;
@@ -189,8 +189,8 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../images/gutters.webp') center/cover no-repeat;
-  opacity: .12;
+  background: url('../images/leafblaster-4.jpg') center/cover no-repeat;
+  opacity: .25;
 }
 
 .hero-inner { position: relative; max-width: 700px; margin: 0 auto; }
@@ -200,6 +200,9 @@ nav {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 20px rgba(0,0,0,.3);
+  background: #fff;
+  padding: 8px 14px;
+  box-sizing: content-box;
 }
 
 /* ── PAGE HERO (inner pages) ── */
@@ -805,7 +808,7 @@ footer {
   gap: 3rem;
 }
 
-.footer-brand img { height: 50px; border-radius: 6px; margin-bottom: 1rem; }
+.footer-brand img { height: 50px; border-radius: 6px; margin-bottom: 1rem; background: #fff; padding: 6px 10px; box-sizing: content-box; }
 .footer-brand p { font-size: .9rem; line-height: 1.7; margin-bottom: 1rem; }
 .footer-brand a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
