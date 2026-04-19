@@ -819,7 +819,7 @@ footer {
   gap: 3rem;
 }
 
-.footer-brand img { height: 50px; display: block; filter: brightness(0) invert(1); margin-bottom: 1rem; }
+.footer-brand img { display: block; margin-bottom: 1rem; }
 .footer-brand p { font-size: .9rem; line-height: 1.7; margin-bottom: 1rem; }
 .footer-brand a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
